@@ -91,5 +91,9 @@ get 'print
 set 'b [0 1 2]  ;== [0 1 2]
 b               ;== [0 1 2]
 
+value? a           ;*** Script Error: a has no value
+value? 'a          ;== false
+type? get/any 'a   ; == unset!
+
 unset 'b
 b               ;*** Script Error: a has no value
