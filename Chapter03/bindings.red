@@ -72,6 +72,9 @@ print b ;== 1 2 3
 'b              ;== b
 type? 'b        ;== word!
 
+c: 'b    ;== b
+type? c  ;== word!
+
 get 'b          ;== [1 2 3]
 get 'print
 ; == make native! [[
