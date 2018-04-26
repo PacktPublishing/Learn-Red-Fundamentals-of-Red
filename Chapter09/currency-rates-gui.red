@@ -18,7 +18,7 @@ view [
     below
     text 280x15 "Rates for which currency (format like USD):"  
     curr-code: field 
-    text 280x15 "Rates from which date (YYYY-MM-DD):" 
+    text 280x15 "Rates from which date (format like YYYY-MM-DD):" 
     curr-date: field 100x25 
     button "Download XML rates file" [download-rates] 
     out: text ""
