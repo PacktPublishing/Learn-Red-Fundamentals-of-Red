@@ -1,2 +1,1 @@
-# Learn-Red---Fundamentals-of-Red
-Learn Red - Fundamentals of Red, published by Packt
+The code for this repository is under development construction_worker_man
