@@ -75,6 +75,11 @@ type? 'b        ;== word!
 c: 'b    ;== b
 type? c  ;== word!
 
+b: [1 2 3]      ;== [1 2 3]
+type? b         ;== block!
+type? 'b        ;== word!
+type? quote 'b  ;== lit-word!
+
 get 'b          ;== [1 2 3]
 get 'print
 ; == make native! [[
