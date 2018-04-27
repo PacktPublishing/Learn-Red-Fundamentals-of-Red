@@ -54,6 +54,7 @@ names   ;== ["John" "Dave" "Jane" "Bob" "Sue"]
 names: ["John" "Dave" "Jane" "Bob" "Sue"]
 repeat i (length? names) [
     print append append form i ": " pick names i
+    ; print [form i ":" pick names i]
 ]
 ; 1: John
 ; 2: Dave
