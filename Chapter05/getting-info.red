@@ -26,6 +26,8 @@ s: "I'm enjoying Red"
 s/4        ;== #" "
 pick s 5   ;== #"e"
 
+second system/console/prompt    ;== #">
+
 at data 3  ;== [C D]
 
 data: next data  ;== [B C D]
