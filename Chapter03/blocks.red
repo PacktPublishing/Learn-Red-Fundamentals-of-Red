@@ -7,6 +7,8 @@ Red []    ; minimal Red header/script
     "Steve"  jobs@apl.com  #408-555-4321
 ]
 
+to-block {1 2 3}  ;== [1 2 3]
+
 loop 10 [prin "hello" print " world"]
 
 ; foreach [site action] sites [
