@@ -49,10 +49,10 @@ body-of :inc                 ;== [n + 1]
 type? :inc                   ;== function!
 
 foreach item code [print [type? item mold item]]
-set-word inc:
-word func
-block [n]
-block [n + 1]
+;set-word inc:
+;word func
+;block [n]
+;block [n + 1]
 
 ; function flexibility:
 ; example 1:
