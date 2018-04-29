@@ -1,3 +1,4 @@
+; Contains Red/System code which requires compilation!
 Red [
     Title: {Calculates factural using a 
     Red/System routine}
