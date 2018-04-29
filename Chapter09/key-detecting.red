@@ -9,6 +9,6 @@ view/options [
             if event/key = #"a" [t/text: "'a' key pressed."]
             if event/key = #"?" [t/text:  "'?' key pressed."]
             if event/key = #" " [t/text: "'space bar'pressed."] 
-                            ]
+        ]
     ]
 ]
