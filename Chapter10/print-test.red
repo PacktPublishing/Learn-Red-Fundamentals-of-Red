@@ -1,5 +1,7 @@
+; Contains Red/System code which requires compilation
 Red [
     Title: "Printing out in Red or in Red/System"
+    Comment: {Contains Red/System code which requires compilation}
 ]
 
 print "From Red"
