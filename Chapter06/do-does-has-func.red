@@ -1,7 +1,7 @@
 Red []
 
 print "Hi"   ;== Hi
-cd %/E/Red/The-Way-to-Red/code/Chapter4
+cd %/C/Windows
 
 ; do
 ; code block with a label:
@@ -45,7 +45,7 @@ calc-hours-year: has [number] [
 ;     print number
 ; ]
 calc-hours-year  ;== 8760
-number   ; *** Script Error: number has no value
+; number   ; *** Script Error: number has no value
 
 ; QA 3
 has1: has [][
@@ -60,7 +60,7 @@ has2: has [num2][
     print num2
 ] ;== func [/local num2][...]
 has2  ;== 66
-num2  ;*** Script Error: num2 has no value
+; num2  ;*** Script Error: num2 has no value
 
 ; func  ; with parameter(s)
 inc: func [n][n + 1] ;== func [n][n + 1]
@@ -75,7 +75,7 @@ sum: func [a b][
 ]  ;== func [a b][...]
 sum 3 5           ;== 8
 print number + 1  ;== 9  ; number is a global numiable
-a  ; *** Script Error: a has no value
+; a  ; *** Script Error: a has no value
 
 ; shadowing a global numiable:
 number: 108        ; global
