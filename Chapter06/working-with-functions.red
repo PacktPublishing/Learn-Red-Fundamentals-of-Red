@@ -72,7 +72,7 @@ average: function [
 ]
 
 average 354 6   ;== 59
-average 354 0   ;*** Math Error: attempt to divide by zero
+; average 354 0   ;*** Math Error: attempt to divide by zero
 
 either error? result: try [average 354 0] [
     print ["Error id: " result/id]
