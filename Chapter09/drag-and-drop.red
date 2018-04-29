@@ -10,5 +10,4 @@ view [
     button 150x50 "Don't lose me!" loose 
 ;        on drop [t/text: "I am dropped"]
 ;        on drag [t/text: "Button is on the loose"]
-       
 ]
