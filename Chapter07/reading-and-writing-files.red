@@ -17,7 +17,7 @@ write/append %contacts1 address
 write/append %contacts1 phone
 
 ; contents of contacts1:
-John Smith123 Tomline Lane Forest Hills, NJ555-1234
+; John Smith123 Tomline Lane Forest Hills, NJ555-1234
 
 ; read
 read %contacts1  ;== {John Smith123 Tomline Lane Forest Hills, NJ555-1234}
@@ -54,7 +54,7 @@ write/part %contacts4.txt contacts 20
 ; QA 3:
 write/seek %contacts6.txt "Adam" 55
 
- read %contacts99  ;*** Access Error: cannot open: %contacts99
+; read %contacts99  ;*** Access Error: cannot open: %contacts99
 
 ; binary files:
 tmp: read/binary %red.png
