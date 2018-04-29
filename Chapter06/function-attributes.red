@@ -1,7 +1,7 @@
 Red []
 
 ; passing arguments by reference:
-passing-ref: function [ data [block! ]][
+passing-ref: function [data][
     append data 108
 ]
 
@@ -17,6 +17,10 @@ inc 3.14 ;== 4.14
 inc: func [n [integer!]][n + 1]
 ; inc 3.14  ;*** Script Error: inc does not allow float! for its n argument
 ; inc "abc" ;*** Script Error: inc does not allow string! for its n argument
+
+passing-ref: function [ data [block!] ][
+    append data 108
+]
 
 inc: func [n [integer! float!]][n + 1]
 inc 3.14 ;== 4.14
