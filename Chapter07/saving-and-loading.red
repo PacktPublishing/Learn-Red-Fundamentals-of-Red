@@ -1,5 +1,13 @@
 Red []
 
+contacts: [
+    "John Smith" "123 Tomline Lane Forest Hills, NJ" "555-1234"
+    "Paul Thompson" "234 Georgetown Pl. Grove, AL" "555-2345"
+    "Jim Persee" "345 Pickles Pike Orange Grove, FL" "555-3456"
+    "George Jones" "456 Topforge Court Mountain Creek, CO" ""
+    "Tim Paulson" "" "555-5678"
+]
+
 ; save and load
 ; QA 4:
 save %contactss contacts
