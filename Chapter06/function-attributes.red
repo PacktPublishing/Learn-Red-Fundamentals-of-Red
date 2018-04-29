@@ -107,16 +107,16 @@ max: function [
 max 42 7 ;== 42
 
 ; code style:
-func-name: func [
-        "Comments for the function itself"
-    	arg1    [type1!]  "Describe 1st argument"
-        arg2    [type2!]  "Describe 2nd argument"
-		/ref1             "Describe refinement"
-                argref1 [type1]                        
-        return: [type3!]  "Describe return value"                
-][
-    	; function body
-]
+; func-name: func [
+;        "Comments for the function itself"
+;    	arg1    [type1!]  "Describe 1st argument"
+;        arg2    [type2!]  "Describe 2nd argument"
+;		/ref1             "Describe refinement"
+;                argref1 [type1]                        
+;        return: [type3!]  "Describe return value"                
+;][
+;    	; function body
+;]
 
 ; QA 7
 average: func [
