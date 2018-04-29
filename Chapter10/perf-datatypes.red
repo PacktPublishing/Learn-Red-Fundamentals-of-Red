@@ -101,3 +101,7 @@ put/case m3 "RED" 2   ;== 2
 print m3
 ; "Red" 2
 ; "RED" 2
+
+; list-env:
+select list-env "windir" ;== "C:\WINDOWS"   ; on Windows
+select list-env "SHELL"  ;== "/bin/bash"
