@@ -33,12 +33,12 @@ pick fruits 3   ;== "tomato"
 
 ; map!
 m1: make map! ["Red" 1 "Crystal" 7 "Python" 13 "Ruby" 42]
-== #(
-    "Red" 1
-    "Crystal" 7
-    "Python" 13
-    "Ruby" 42
-)
+;== #(
+;    "Red" 1
+;    "Crystal" 7
+;    "Python" 13
+;    "Ruby" 42
+;)
 
 m5: #(
     "Red" 1
