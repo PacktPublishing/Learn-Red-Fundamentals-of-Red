@@ -13,7 +13,7 @@ Red [
 ; ][details refine1][details refine2]
 
 ; view [
-;     text "Use of do block"
+;     text 250x300 "Use of do block"
 ;     n: 2 ** 3
 ;     print n
 ; ]
@@ -71,8 +71,3 @@ view [
     base green 25x25
 ]
 
-; offset:
-v: view [
-    base aqua 25x25
-]
-v/offset: 75x40
