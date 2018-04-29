@@ -33,14 +33,14 @@ name: "John"
 room-number: 42
 
 ; word separators:
-[ ] ( ) { } " : ; / 
+; [ ] ( ) { } " : ; / 
 
-valid words
-is-integer?
-date-of-birth
-date!
-*new-line*
-Area51
+; valid words:
+;is-integer?
+;date-of-birth
+;date!
+;*new-line*
+;Area51
 
 ; the same word:
 ; City
