@@ -26,9 +26,12 @@ append code [- pi]   ;== [3.141592653589793 - 3 - pi]
 code                 ;== [3.141592653589793 - 3 - pi]
 do code              ;== -3.0
 
+code/2                 ;== -
 second code            ;== -
 type? second code      ;== word!
-type? get second code  ;op!
+type? code/2           ;== word!
+:code/2                ;== -
+type? get second code  ;== op!
 
 -: :+    ;== make op! [[    "Returns the sum of the two values" ...
 code     ;== [3.141592653589793 - 3 - pi]
