@@ -16,9 +16,11 @@ host:    [email-word]
 domain:  [email-word some [dot email-word]]
 email:   [host "@" domain]
 
-parse dtrump@whitehouse.org email           ;== true
-parse "john-locke@lost.island.org" email    ;== true
-parse "h4x0r-l33t@domain.net" email         ;== true
+parse "dtrump@whitehouse.org" email           ;== true
+parse "john-locke@lost.island.org" email      ;== true
+parse "h4x0r-l33t@domain.net" email           ;== true
+; the following example works because email! values are a subset of string! values:
+parse h4x0r-l33t@domain.net email             ;== true
 
 ; changing a rule on the fly:
 rule: ["x" | "y"]
