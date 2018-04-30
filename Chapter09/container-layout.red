@@ -4,11 +4,11 @@ Red [
 ]
 
 ; structure of view block:
-; view/refine1/refine [
+; view/refine1/refine2 [
 ;     container settings
 ;     layout commands
-;     face1 faces [action facet]
-;     face2 faces [action facet]
+;     face1 facets [action facet]
+;     face2 facets [action facet]
 ;     ...
 ; ][details refine1][details refine2]
 
