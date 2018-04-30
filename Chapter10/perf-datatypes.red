@@ -12,6 +12,7 @@ v1 * 4  ;== make vector! [36 60 176 440]
 v2: make vector! [1 2 3 4]
 v1 + v2 ;== make vector! [37 62 179 444]
 
+v1: make vector! [7 13 42 108]
 length? v1     ;== 4
 append v1 666  ;== make vector! [7 13 42 108 666]
 find v1 42     ;== make vector! [42 108 666]
