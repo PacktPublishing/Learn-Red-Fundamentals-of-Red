@@ -88,3 +88,13 @@ prn: function params body    ;-- function definition
 
 prn "Hello World"   ;== Hello World
 source prn          ;== prn: func [message][print message]
+
+; example 2 variant:
+params: [] 
+body: []
+append params 'message
+append body [print message]
+prn: function params body    ;-- function definition     
+
+prn "Hello World"   ;== Hello World
+source prn          ;==prn: func [message][print message]
