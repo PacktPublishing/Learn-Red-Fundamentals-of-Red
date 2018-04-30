@@ -81,6 +81,24 @@ either error? result: try [average 354 0] [
 ]
 ;== Error id:  zero-divide
 
+; simpler handling:
+average: function [
+    total [number!] count [integer!]] [
+    if zero? count [return "Divide by zero"]
+    total / count ; might cause an error
+]
+
+average 354 0  ;== "Divide by zero"
+
+average: function [
+    total [number!] count [integer!]] [
+    if zero? count [exit]
+    total / count ; might cause an error
+]
+
+average 354 0
+
+
 ; QA 8
 mysqrt: func [n][
     unless ((type? n) = integer!) or ((type? n) = float!) [
