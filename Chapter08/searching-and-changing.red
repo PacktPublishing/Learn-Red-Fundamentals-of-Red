@@ -14,25 +14,23 @@ parse rate [thru "<title>" pos:]  ;== false
 pos         ;== "1 USD = 0.81191502 EUR</title>"
 index? pos  ;== 8
 
-parse rate [thru "<title>" pos1: to "</title>" pos2: thru ">"]   ;== false
+parse rate [thru "<title>" pos1: to "</title>" pos2: to end]   ;== true
 pos1          ;== "1 USD = 0.81191502 EUR</title>"
 index? pos1   ;== 8   
 pos2          ;== "</title>"
 index? pos2   ;== 30
 
-parse rate [thru "<title>" to "</title>"]
 parse rate [thru "<title>" to "</title>"]           ;== false
-parse rate [thru "<title>" to "</title>" thru ">"]  ;== true
-parse rate [thru "<title>" copy data to "</title>" thru ">"]  ;== true
-parse rate [thru "<title>" to "</title>" to end]  ;== true
+parse rate [thru "<title>" to "</title>" to end]    ;== true
 
+parse rate [thru "<title>" copy data to "</title>" to end]  ;== true
 print data ;1 USD = 0.81191502 EUR
 probe data  ;== "1 USD = 0.81191502 EUR"
 
-parse rate [thru "<title>" copy data to "</title>" (print data) thru ">"]
+parse rate [thru "<title>" copy data to "</title>" (print data) to end]
 ;1 USD = 0.81191502 EUR  ;== true
 
-parse rate [thru "<title>" set data to "</title>" (print data) thru ">"]
+parse rate [thru "<title>" set data to "</title>" (print data) to end]
 ;1 ;== true
 
 ; QA 6:
