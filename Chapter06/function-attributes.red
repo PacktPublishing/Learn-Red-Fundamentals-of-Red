@@ -43,7 +43,7 @@ search-val: func [series value] [
     none
 ]
 
-search-val [10 20 30 40] 3   ;== [30 40]
+search-val [10 20 30 40] 30   ;== [30 40]
 search-val [10 20 30 40] 9   ;== none
 
 ; return multiple values:
@@ -56,7 +56,7 @@ search-val: func [series value] [
     none
 ]
 
-search-val [10 20 30 40] 3   ;== [[30 40] 3]
+search-val [10 20 30 40] 30   ;== [[30 40] 3]
 
 ; return type
 double: function [
