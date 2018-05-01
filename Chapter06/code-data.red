@@ -101,3 +101,12 @@ prn: function params body    ;-- function definition
 
 prn "Hello World"   ;== Hello World
 source prn          ;==prn: func [message][print message]
+
+; another example:
+code: [print "hello"]   ;== [print "hello"]
+code: reduce [code]     ;== [[print "hello"]]
+insert code [loop 2]
+probe code              ;[loop 2 [print "hello"]]
+do code
+; hello
+; hello
