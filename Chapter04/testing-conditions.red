@@ -12,9 +12,12 @@ n: 12 m: 42
 if any [n = 13  m = 42] [print "true!"]  ;== true!
 if all [n = 13  m = 42] [print "true!"]  ;== none ; nothing printed
 
-if 42 [print "true!"]   ;==true!
-if "ok" [print "true!"] ;==true!
-if none [print "true!"] ;== none
+if 42   [print "true!"]   ;== true!
+if "ok" [print "true!"]   ;== true!
+if 0    [print "true!"]   ;== true!
+if []   [print "true!"]   ;== true!
+if none  [print "true!"]  ;== none
+if false [print "true!"]  ;== none
 
 unless exists? %missing.txt [print "File missing.txt does not exist"] 
 
