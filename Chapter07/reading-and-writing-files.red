@@ -56,6 +56,9 @@ write/seek %contacts6.txt "Adam" 55
 
 ; read %contacts99  ;*** Access Error: cannot open: %contacts99
 
+read %.
+;== [%apps/ %articles/ %benchmarks/ %blockchain/ %books/ %build/ %cinfo %contactss ... ]
+
 ; binary files:
 tmp: read/binary %red.png
 ; In hexadecimal format
@@ -67,8 +70,15 @@ tmp: read/binary %red.png
 write/binary %red-copy.png tmp
 write/binary %red-copy2.png read/binary %red.png
 
-read %.
-;== [%apps/ %articles/ %benchmarks/ %blockchain/ %books/ %build/ %cinfo %contactss ... ]
+; image!
+img: load %logo.png 
+; == make image! [120x124 #{
+;     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+img/size     ;== 120x124
+pick img 10  ;== 255.255.255.0
+poke img 10 150.125.100.0  ;== 150.125.100.0
+img2: make image! [30x40 #{ ; binary image data...}]
+write/binary %picture.png img2 
 
 ; downloading a file from the internet:
 read http://www.red-lang.org/index.html
