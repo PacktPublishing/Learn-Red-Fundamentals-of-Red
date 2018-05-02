@@ -47,4 +47,5 @@ mailto:ivo.balbaert@gmail.com
 #0000-1234-5678-9999
 
 #{42652061205245424F4C} ; hexadecimal binary!
+2#{010001}              ; base-2 binary
 64#{UkVCT0wgUm9ja3Mh}   ; base-64 binary!
