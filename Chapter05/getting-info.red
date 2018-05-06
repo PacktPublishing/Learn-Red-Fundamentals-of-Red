@@ -17,6 +17,7 @@ pick data 3     ;== C
 
 i: 3
 data/:i         ;== C
+data/(i)        ;== C
 
 ; QA 6 :
 empty-lst/5     ;== none
