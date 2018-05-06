@@ -90,6 +90,13 @@ select/only blk [22 33 44] ;== 15
 select/last blk 13
 
 ; QA 9:
+ser: [[3 7][13 42][108 666]]
+ser/1/2       ;== 7
+ser/3/1       ;== 108
+ser/3/2: 999  ;== 999
+ser           ;== [[3 7] [13 42] [108 999]]
+
+; QA 10:
 select/part ["Red" "Crystal" "Ruby" "Java" "Go" "Rust"] ["Java"] 4
 ;== "Go"
 find/part ["Red" "Crystal" "Ruby" "Java" "Go" "Rust"] ["Java"] 4
