@@ -1,5 +1,10 @@
 Red []
 
+str: "Red"   ;== "Red"
+type? str    ;== string!
+string? str  ;== true
+series? str  ;== true
+
 ; split
 s1: "The quick brown fox jumps over the lazy dog"
 split s1 " " ;== ["The" "quick" "brown" "fox" "jumps" "over" "the" "lazy" "dog"]
