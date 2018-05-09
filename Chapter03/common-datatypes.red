@@ -49,3 +49,9 @@ mailto:ivo.balbaert@gmail.com
 #{42652061205245424F4C} ; hexadecimal binary!
 2#{010001}              ; base-2 binary
 64#{UkVCT0wgUm9ja3Mh}   ; base-64 binary!
+
+integer? -42       ;== true
+logic? off         ;== true
+date? 20-4-2018    ;== true
+; date? 2018-44-18   ;*** Script Error: cannot MAKE/TO date! from: [day month year]
+
