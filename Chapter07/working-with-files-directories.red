@@ -1,9 +1,10 @@
 Red []
 
-to-local-file %/e/code/red/red.bat   ;== "e:\code\red\red.bat"
-to-red-file "e:\code\red\red.bat"    ;== %/e/code/red/red.bat
+to-local-file %/E/Red/red.bat        ;== "E:\Red\red.bat"
+to-red-file "E:\Red\red.bat"         ;== %/E/Red/red.bat
 to-local-file/full %red.bat          ;== "E:\Red\red.bat"
-write %"c:\programdata\red\test.txt" "test"
+
+write %"C:\ProgramData\Red\test.txt" "test"
 
 pwd              ;== %/C/ProgramData/Red/
 what-dir         ;== %/C/ProgramData/Red/
