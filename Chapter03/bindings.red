@@ -17,6 +17,11 @@ age ;== 62
 number! ;== 62
 size ;== 62
 
+set [log-time start-time run-time] 10:57 ;== 10:57:00
+start-time  ;== 10:57:00
+log-time    ;== 10:57:00
+run-time    ;== 10:57:00
+
 print :age   ;== 62
 
 value? age    ;== true
