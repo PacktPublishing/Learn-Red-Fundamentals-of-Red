@@ -6,6 +6,8 @@ Red []
 ; *** Stack: 
 
 (to-integer "12") + (to-integer "34")  ; == 46
+; to-integer "12" + (to-integer "34") 
+;*** Script Error: + does not allow string! for its value1 argument
 
 pi-str: to-string pi ;== "3.141592653589793"
 f1: to-float 42      ;== 42.0
@@ -13,7 +15,7 @@ f1: to-float 42      ;== 42.0
 pi-str: to string! pi   ;== "3.141592653589793"
 pi-int: to integer! pi  ;== 3
 f1: to float! 42        ;== 42.0
-to integer! "34A" ;*** Script Error: cannot MAKE/TO integer! from: "34A"
+to-integer "34A" ;*** Script Error: cannot MAKE/TO integer! from: "34A"
 to-time [12 03 22]  ;== 12:03:22
 
 n: mold 3               ;== "3"
