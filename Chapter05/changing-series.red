@@ -96,6 +96,16 @@ remove/part [10 11 12] 2 ;== [12]
 take [10 11 12]      ;== 10
 take/last [10 11 12] ;== 12
 
+; unique:
+unique [7 13 42 108 2 7 14 42 109] returns [7 13 42 108 2 14 109]
+
+; remove-each:
+ser: [7 13 42 108]
+remove-each item ser [even? item]
+ser ;== [7 13]
+remove-each item ser [item < 10]
+ser ;== [13]
+
 ; move
 s: ["A" "B" "C"]
 move [1 2 3] s ;== [2 3]
