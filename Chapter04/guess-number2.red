@@ -29,7 +29,7 @@ loop max-number-of-guesses [
     
     guessed-number: load answer
 
-    if integer? guessed-number [   
+    if not integer? guessed-number [   
         print ["This is no integer! Try again."]
         continue
     ]
