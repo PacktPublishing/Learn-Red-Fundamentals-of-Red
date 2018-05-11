@@ -2,8 +2,8 @@ Red []
 
 ; error-handling
 inc: func [n][
-    if (type? n) <> integer! [   
-        print ["n must be an integer, not a " (type? n)]
+    if not integer? n [   
+        print ["n must be an integer, not a" (type? n)]
         exit
     ]
     n + 1
@@ -14,8 +14,8 @@ inc pi      ;== n must be an integer, not a  float
 inc "abc"   ;== n must be an integer, not a  string
 
 inc: func [n][
-    unless (type? n) = integer! [   
-        print ["n must be an integer, not a " (type? n)]
+    unless integer? n [   
+        print ["n must be an integer, not a" (type? n)]
         exit
     ]
     n + 1
@@ -26,26 +26,10 @@ none? 5       ;== false
 positive? -9  ;== false
 float? pi     ;== true
 
-inc: func [n][
-    if not integer? n [   
-        print ["n must be an integer, not a " (type? n)]
-        exit
-    ]
-    n + 1
-]
-
-inc: func [n][
-    unless integer? n [   
-        print ["n must be an integer, not a " (type? n)]
-        exit
-    ]
-    n + 1
-]
-
 ; using if error? try
 inc: func [n /local result][
     if error? try [result: n + 1][
-        print ["n must be an integer, not a " (type? n)]
+        print ["n must be an integer, not a" (type? n)]
         exit    
     ]
     result
@@ -53,7 +37,6 @@ inc: func [n /local result][
 
 inc 9           ;== 10
 inc "Red"       ;n must be an integer, not a  string
-
 
 ; general:
 ; guarded-func: function [arguments][
