@@ -46,7 +46,8 @@ tail data            ;== []
 first data           ;== B
 index? data          ;== 2
 
-head data        ;== [A B C D]
+head data              ;== [A B C D]
+data: head data        ;== [A B C D]
 
 ; looping:
 names: ["John" "Dave" "Jane"]
