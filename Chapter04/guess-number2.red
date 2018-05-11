@@ -29,11 +29,11 @@ loop max-number-of-guesses [
     
     guessed-number: load answer
 
-    if (type? guessed-number) <> integer! [   
+    if integer? guessed-number [   
         print ["This is no integer! Try again."]
         continue
     ]
-    ; (type? guessed-number) <> number!
+    ; (type? guessed-number) <> integer!
             
     if secret-number = guessed-number [
         print ["Congratulations. You guessed the number" secret-number "in" 
