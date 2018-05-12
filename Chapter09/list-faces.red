@@ -14,6 +14,6 @@ view [
     drop-list data city-trip [t2/text: pick face/data face/selected]
 
     t3: text "Click on a city to visit ->"
-    drop-down data city-trip [t3/text: pick face/data face/selected]
-    ; drop-down data city-trip on-change [t3/text: pick face/data face/selected]
+    drop-down data city-trip [t3/text: pick face/data face/selected print t3/text]
+    ;              on-change [t3/text: pick face/data face/selected print t3/text]
 ]
