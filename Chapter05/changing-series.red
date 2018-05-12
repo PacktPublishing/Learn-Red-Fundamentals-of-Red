@@ -1,8 +1,15 @@
 Red []
 
 ; change an item:
+; to a word:
 data: [A B C D]
-; data/3: X    ; doesn't work: X has no value!
+data/3: 'X     ;== X
+data           ;== [A B X D]
+; data/3: X    ; Script Error: X has no value!
+poke data 3 'X
+
+; to a string:
+data: [A B C D]
 data/3: "X"    ;== "X"
 data           ;== [A B "X" D]
 data: [A B C D]
