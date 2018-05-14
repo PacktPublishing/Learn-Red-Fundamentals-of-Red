@@ -81,6 +81,7 @@ print 10 + sine 30 + 60     ;== 11.0
 ; print (10 + sine 30 + 60)	    (1)
 ; print (10 + (sine 30 + 60))	(2)
 ; print (10 + (sine (30 + 60)))	(3)
+; print (10 + (sine 90))	    (4)
 
 ; your turn:
 square-root 9 + square-root 9       ;== 3.464101615137754
